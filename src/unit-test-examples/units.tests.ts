@@ -1,7 +1,15 @@
 import { add, divide } from './units';
+import { concat } from './units';
 
 import { expect } from 'chai';
 import 'mocha';
+
+describe('combines two strings', () => {
+  it('should combine HelloWorld!', () =>{
+    const result = concat('Hello', 'World!');
+    expect(result).to.equal('HelloWorld!');
+  })
+})
 
 describe('add function', () => {
 

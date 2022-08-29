@@ -11,6 +11,10 @@ export const divide = (a: number, b: number) => {
     }
 
 // @TODO try creating a method "concat" to concatenate two strings
+export const concat = (sentenceOne: string, sentenceTwo: string) => {
+    if (!sentenceOne && !sentenceTwo){ throw new Error('Empty Strings')}
+    return sentenceOne + sentenceTwo
+}
 // it should take two string paramaters.
 // it should return one string combining the two strings.
 // it should throw an error if either of the strings are empty.
